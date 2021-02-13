@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Desarrollo Web</title>
+    <link rel='stylesheet' href='assets/style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body id="body" class="">
+    <div class="pre-nav">
+        <img class="logo" src="assets/images/logo.png" alt="Logo Yael Lozano">
+    </div>
+    <nav>
+        <ul class="navigation-bar">
+            <li class="container"><a class="navigation-item active" href="#home">Home</a></li>
+            <li class="container"><a class="navigation-item" href="#about">About Me</a></li>
+            <li class="container"><a class="navigation-item" href="#portfolio">Portfolio</a></li>
+            <li class="container"><a class="navigation-item" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="home">
+        <h1>Yael Lozano, <br> Full-Stack Developer</h1>
+    </div>
+    <section id="about">
+        <div class="about-illustration">
+            <div class="about-color"></div>    
+            <img src="assets/images/01.jpg" alt="Yael Lozano" class="about-item about-image">
+        </div>
+        <div class="about-text">
+            <h2 class="about-title">About me</h2>
+            <p class="about-content">
+                Hello, my name is Yael Lozano I am seventeen years old. I have been a junior Full-Stack developer for 5 months now. <br>
+                For me, programming is not just a job, it's a hobby. <br>
+                I am open to new knowledge. I like to study new technologies an aplly them in practice.<br>
+                <b>Skills:</b> Advanced HTML, CSS, JS, Java, Node-JS.
+            </p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <div class="content">
+                    <img src="assets/images/02.png" alt="Proyecto Flipcards" id="img-flipcards"></video>
+                    <button class="open-window" id="flipcardsButton">Flipcards</button>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="content">
+                    <img src="assets/images/03.png" alt="Proyecto Dencrypt" id="img-dencrypt"></video>
+                    <button class="open-window" id="dencryptButton">Dencrypt</button>
+                </div>
+            </div>
+            <div class="portfolio-item"> 
+                <div class="content">
+                    <img src="assets/images/04.png" alt="Proyecto Javafy" id="img-javafy">
+                    <button class="open-window" id="javafyButton">Javafy</button>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="content">
+                    <img src="assets/images/05.png" alt="Proyecto Coffe Machine" id="img-coffemachine">
+                    <button class="open-window" id="coffemachineButton">Coffe Machine</button>
+                </div>
+            </div> 
+        </div>
+        <div id="overlay"></div>
+        <div class="window" id="flipcards">
+            <div class="window-content">
+                <div class="window-header">
+                    <h3 class="title">Flipcards</h3>
+                    <button class="close-window" id="close-window-flipcards">&times;</button>
+                </div>
+                <div class="window-body">
+                    <video controls src="assets/images/02.mp4" alt="Proyecto Flipcards" class="vid-popup"></video>
+                    <p class="text-flipcards">I did this project when I was studing the frontend on HyperSkill. I created a web-page
+                        with flip-down flesh cards, learned some HTML basics and learned that CSS can
+                        easily make a beautiful design.</p>
+                </div>
+            </div>
+        </div>
+        <div class="window" id="dencrypt">
+            <div class="window-content">
+                <div class="window-header">
+                    <h3 class="title">Dencrypt</h3>
+                    <button class="close-window" id="close-window-dencrypt">&times;</button>
+                </div>
+                <div class="window-body">
+                    <video controls src="assets/images/03.mp4" alt="Proyecto Dencrypt" class="vid-popup"></video>
+                    <p class="text-flipcards">I did this project when I was studing the frontend on HyperSkill. I created a web-page
+                        with flip-down flesh cards, learned some HTML basics and learned that CSS can
+                        easily make a beautiful design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p id="email"><b>Email:</b> admin@mryaello.tk</p>
+        <ul id="social">
+            <li><a href="" target="_blank"><img src="assets/images/github.png" class="social-network" alt="Git Hub"></a></li>
+            <li><a href="" target="_blank"><img src="assets/images/facebook.png" class="social-network" alt="Facebook"></a></li>
+            <li><a href="" target="_blank"><img src="assets/images/instagram.jpg" class="social-network" alt="instagram"></a></li>
+            <li><a href="" target="_blank"><img src="assets/images/twitter.png" class="social-network" alt="Twitter"></a></li>
+        </ul>
+    </section>
+    <footer>
+        <p id="footer">Yael Lozano <br> 2021</p>  
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>
