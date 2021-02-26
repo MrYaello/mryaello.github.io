@@ -158,11 +158,6 @@ h1:hover {
     height: 35vw;
 }
 
-.about-illustration:hover {
-    margin: 0px 0px 20px 0px;
-    transition: 0.5s;
-}
-
 .about-color, .about-image {
     position: absolute;
     display: flex;
@@ -193,7 +188,7 @@ h2 {
     text-align: center;
     font-size: 5vh;
     border-left: rgb(0, 158, 255) 8px solid;
-    width: 20vw;
+    width: 30vw;
 }
 
 .about-content {
@@ -267,6 +262,7 @@ h2 {
 	background-image: linear-gradient(bottom, rgb(62,51,46) 0%, rgb(101,86,78) 100%);
 	border-radius: 5px;
 	box-shadow: inset 0px 1px 0px #9e8d84, 0px 5px 0px 0px #322620, 0px 10px 5px #999;
+    transition: 0.5s;
 }
 
 .open-window:active {
@@ -295,6 +291,11 @@ h2 {
 	top:50%;
 	margin-top:-12px;
 	box-shadow: inset 0px 1px 0px #827066, 0px 3px 0px #19120f, 0px 6px 3px #382e29;
+}
+
+.open-window:hover {
+    background-color: rgb(0, 106, 172);
+    transition: 0.5s;
 }
 
 .visible {
@@ -336,11 +337,11 @@ h2 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     font-size: 5vh;
-    margin-left: 100px
+    margin-left: 5vh
 }
 
 .close-window {
-    margin-right: 50px;
+    margin: 1.5vh 4vh 1.5vh 1.5vh;
     width: 50px;
     height: 50px;
     align-self: flex-end;
@@ -361,6 +362,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    align-items: flex-start;
     height: 15%;
 }
 
@@ -370,18 +372,18 @@ h2 {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    height: 80%;
+    height: 85%;
 }
 
 .vid-popup {
     width: 50%;
-    margin-left: 100px;
+    margin-left: 5%;
 }
 
-.text-flipcards {
+.text-popup {
     font-family: 'Raleway', sans-serif;
     text-align: justify;
-    padding: 50px;
+    padding: 5%;
 }
 
 .content {
@@ -475,8 +477,7 @@ footer {
     .navigation-bar {
         position: fixed;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 100vh;
         background: linear-gradient(90deg, rgb(64, 64, 64), gray);
         display: flex;
         flex-direction: column;
@@ -506,6 +507,45 @@ footer {
         padding: 5px;
         background-repeat: no-repeat;
         background-size: 100% 100%;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+
+    .about-text {
+        width: 75vw;
+    }
+
+    h2 {
+        width: 80vw;
+    }
+
+    .about-illustration {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .about-color, .about-image {
+        width: 47vw;
+        height: 47vw;
+    }
+
+    .window-content {
+        width: 90%;
+        height: 90%;
+    }
+
+    .window-body {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .vid-popup {
+        width: 90%;
+        margin: 0;
     }
 }
 
