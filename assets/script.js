@@ -1,14 +1,9 @@
-let flipcardsButton = document.getElementById("flipcardsButton");
-let closeButtonFlipcards = document.getElementById("close-window-flipcards");
-let dencryptButton = document.getElementById("dencryptButton");
-let closeButtonDencrypt = document.getElementById("close-window-dencrypt")
-let coffemachineButton = document.getElementById("coffemachineButton");
-let closeButtonCoffemachine = document.getElementById("close-window-coffemachine");
-/*
-let javafyButton = document.getElementById("javafyButton");
-let closeButtonJavafy = document.getElementById("close-window-javafy");
-*/
-
+const flipcardsButton = document.getElementById("flipcardsButton");
+const closeButtonFlipcards = document.getElementById("close-window-flipcards");
+const dencryptButton = document.getElementById("dencryptButton");
+const closeButtonDencrypt = document.getElementById("close-window-dencrypt")
+const coffemachineButton = document.getElementById("coffemachineButton");
+const closeButtonCoffemachine = document.getElementById("close-window-coffemachine");
 
 flipcardsButton.addEventListener('click', function() {
     document.getElementById("flipcards").classList.toggle("visible");
@@ -46,18 +41,24 @@ closeButtonCoffemachine.addEventListener('click', function() {
     document.getElementById("body").classList.toggle("modal-open");
 });
 
-/*
-javafyButton.addEventListener('click', function() {
-    document.getElementById("javafy").classList.toggle("visible");
-    document.getElementById("overlay").classList.toggle("visible");
-    document.getElementById("body").classList.toggle("modal-open");
-});
+function navSlide() {
+    const burger = document.querySelector(".burger");
+    const navBar = document.querySelector(".navigation-bar");
+    const navItems = document.querySelectorAll(".navigation-item");
 
-closeButtonJavafy.addEventListener('click', function() {
-    document.getElementById("javafy").classList.toggle("visible");
-    document.getElementById("overlay").classList.toggle("visible");
-    document.getElementById("body").classList.toggle("modal-open");
-});
-*/
+    burger.addEventListener("click", () => {
+        navBar.classList.toggle("navigation-active");
 
+        navItems.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navItemFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            }
+        });
 
+        burger.classList.toggle("toggle");
+    });
+}
+
+navSlide();

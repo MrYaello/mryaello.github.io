@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Desarrollo Web</title>
     <link rel='stylesheet' href='assets/style.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,12 +16,18 @@
         <img class="logo" src="assets/images/mylogo.png" alt="Logo Yael Lozano">
     </div>
     <nav>
+        <div class="text-logo">MrYaello</div>
         <ul class="navigation-bar">
-            <li class="container"><a class="navigation-item active" href="#home">Home</a></li>
-            <li class="container"><a class="navigation-item" href="#about">About Me</a></li>
-            <li class="container"><a class="navigation-item" href="#portfolio">Portfolio</a></li>
-            <li class="container"><a class="navigation-item" href="#contact">Contact</a></li>
+            <li class="navigation-item"><a href="#home">Home</a></li>
+            <li class="navigation-item"><a href="#about">About Me</a></li>
+            <li class="navigation-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="navigation-item"><a href="#contact">Contact</a></li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
     <div id="home">
         <h1>Yael Lozano, <br> Full-Stack Developer</h1>
@@ -45,30 +52,22 @@
         <div class="portfolio-container">
             <div class="portfolio-item">
                 <div class="content">
-                    <img src="assets/images/02.png" alt="Proyecto Flipcards" id="img-flipcards"></video>
+                    <div class="img-flipcards"></div>
                     <button class="open-window" id="flipcardsButton">Flipcards</button>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="content">
-                    <img src="assets/images/03.png" alt="Proyecto Dencrypt" id="img-dencrypt"></video>
+                    <div class="img-dencrypt"></div>
                     <button class="open-window" id="dencryptButton">Dencrypt</button>
                 </div>
             </div>
             <div class="portfolio-item">
                 <div class="content">
-                    <img src="assets/images/04.png" alt="Proyecto Coffe Machine" id="img-coffemachine">
+                    <div class="img-coffemachine"></div>
                     <button class="open-window" id="coffemachineButton">Coffe Machine</button>
                 </div>
             </div>
-            <!-- 
-            <div class="portfolio-item"> 
-                <div class="content">
-                    <img src="assets/images/04.png" alt="Proyecto Javafy" id="img-javafy">
-                    <button class="open-window" id="javafyButton">Javafy</button>
-                </div> 
-            </div> 
-            !--> 
         </div>
         <div id="overlay"></div>
         <div class="window" id="flipcards">
@@ -108,20 +107,6 @@
                 </div>
             </div>
         </div>
-        <!-- 
-        <div class="window" id="javafy">
-            <div class="window-content">
-                <div class="window-header">
-                    <h3 class="title">Javafy</h3>
-                    <button class="close-window" id="close-window-javafy">&times;</button>
-                </div>
-                <div class="window-body">
-                    <video controls src="assets/images/03.mp4" alt="Proyect Javafy" class="vid-popup"></video>
-                    <p class="text-flipcards">I did this project when I was studing the frontend on HyperSkill. I created a web-page with flip-down flesh cards, learned some HTML basics and learned that CSS can easily make a beautiful design.</p>
-                </div>
-            </div>
-        </div> 
-        !-->
     </section>
     <section id="contact">
         <h2>Contact</h2>
