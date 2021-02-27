@@ -128,12 +128,6 @@ h1 {
     font-family: 'Oswald', sans-serif;
     color: white;
     padding-left: 10px;
-    border-left: white 8px solid;
-    transition: 0.5s;
-}
-
-h1:hover {
-    margin: 0px 0px 30px 70px;
     border-left: rgb(0, 158, 255) 8px solid;
     transition: 0.5s;
 }
