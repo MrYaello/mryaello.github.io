@@ -335,7 +335,7 @@ h2 {
 
 .title {
     font-family: 'Oswald', sans-serif;
-    text-align: center;
+    text-align: left;
     font-size: 5vh;
     margin-left: 5vh
 }
@@ -370,20 +370,21 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 85%;
 }
 
 .vid-popup {
     width: 50%;
-    margin-left: 5%;
+    padding: 3%;
 }
 
 .text-popup {
     font-family: 'Raleway', sans-serif;
     text-align: justify;
-    padding: 5%;
+    padding: 3%;
+    margin: 0;
 }
 
 .content {
@@ -541,11 +542,17 @@ footer {
         flex-direction: column-reverse;
         flex-wrap: nowrap;
         justify-content: flex-end;
+        padding: 0% 5% 0% 5%;
     }
 
     .vid-popup {
         width: 90%;
         margin: 0;
+    }
+
+    .title {
+        font-size: 4vh;
+        padding: 3%;
     }
 }
 
